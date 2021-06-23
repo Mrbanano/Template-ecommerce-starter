@@ -1,13 +1,33 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import { graphql } from 'gatsby'
+import Carousel from "../components/Caroulsel"
+import Advertising from "../components/Advertising.jsx"
+import Banner from "../components/Banner"
+import Layout from '../components/Layout';
+import Products from '../components/Products'
+const {Company,Caroulsel} = require ('../data/content.js')
 
-
-export default function index() {
-  return (
-    <Layout>
-      <h1>
-        found
-      </h1>
-    </Layout>
-  )
+export default function index(props) {
+    const productsData = props.data.allStripeProduct.nodes
+    return (
+        <Layout>
+         <h2>aqui va el carrusel</h2>
+        <Advertising/>
+        <Banner/>
+        <Products productsData={productsData}/>
+        </Layout>
+    )
 }
+
+export const pageQuery = graphql`
+  {
+    allStripeProduct {
+      nodes {
+        id
+        images
+        name
+        description
+      }
+    }
+  }
+`;
