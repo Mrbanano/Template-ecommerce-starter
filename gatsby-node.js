@@ -1,8 +1,8 @@
 const slugify = require('slugify');
 
 const slugifyOptions = {
-  replacement: '-',
-  lower: true
+    replacement: '-',
+    lower: true
 }
 
 exports.sourceNodes = ({ actions }) => {
@@ -11,15 +11,39 @@ exports.sourceNodes = ({ actions }) => {
         slug: String!  
       }
     `);
-  }
+}
 
 
 exports.createResolvers = ({ createResolvers }) => {
     createResolvers({
-      StripeProduct: {
-        slug: {
-          resolve: (source) => slugify(source.name, slugifyOptions)
+        StripeProduct: {
+            slug: {
+                resolve: (source) => slugify(source.name, slugifyOptions)
+            }
+        }
+    })
+}
+
+exports.createPages = async ({ actions, graphql }) => {
+    const products = (await graphql(`
+      {
+        allStripeProduct {
+          nodes {
+            slug
+            id
+            name
+          }
         }
       }
+    `)).data.allStripeProduct.nodes;
+
+    products.forEach((product) => {
+        actions.createPage({
+            path: `productos/${product.slug}`,
+            component: require.resolve("./src/templates/ProductDetail.jsx"),
+            context: {
+                id: product.id
+            }
+        })
     })
-  }
+}
