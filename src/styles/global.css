@@ -1,5 +1,6 @@
 @import "./Components/Caroulsel.css";
 @import "./Components/Nav.css";
+@import "./Components/Search.css";
 
 
 :root{
@@ -7,6 +8,12 @@
     --primary:#;
     --Secundary:#;
     --Complemento:#;
+
+    /*color Navbar */
+    --NavBar-Background-color: white ;
+    --NavBar-Link-color: rgb(66, 66, 66);
+    --NavBar-Link-color-hover: rgb(107, 107, 107);
+    
 
     /*Slider colors */
     --Controls-input-background:#fff;

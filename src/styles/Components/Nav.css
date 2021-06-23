@@ -1,5 +1,5 @@
 .Header{
- background: var(--white);
+ background: var(--NavBar-Background-color);
 }
 
 .Header-nav{
@@ -17,13 +17,13 @@
 
 .Header-nav ul a{
     text-decoration: none;
-    font: var(--button);
+    font: var(--NavBar-Link-color);
     text-transform: uppercase;
     transition: all 0.5s ease-out;
 }
 
 .Header-nav ul a:hover{
-    color: var(--principal);
+    color: var(--NavBar-Link-color-hover);
 }
 @media only screen and (min-width: 768px){
     .Header-nav{

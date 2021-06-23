@@ -26,15 +26,15 @@ const menuContent =[
 const Caroulsel = [
   {
     name:"img 1",
-    url:"https://cdn.shopify.com/s/files/1/0509/9883/7405/files/pag-portada-02_2000x.png?v=1618276474",
+    url:"https://i.postimg.cc/s2QPcJQv/Slider1.png",
   },
   {
     name:"img 2",
-    url:"https://cdn.shopify.com/s/files/1/0509/9883/7405/files/factor-banner-pag_2000x.png?v=1617730918",
+    url:"https://i.postimg.cc/vTz5BqjS/Slider2.png",
   },
   {
     name:"img 3",
-    url:"https://cdn.shopify.com/s/files/1/0509/9883/7405/files/pag-portada_2000x.png?v=1617727662",
+    url:"https://i.postimg.cc/8z3MjrKD/Slider3.png",
   }
 ]
 

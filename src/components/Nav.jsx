@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import Search from "./Search"
 
 
 export default function Nav ({menuContent, Company}) {
@@ -20,6 +22,7 @@ export default function Nav ({menuContent, Company}) {
           ))}
         </ul>
       </nav>
+      <Search/>
     </header>
   )
 }
