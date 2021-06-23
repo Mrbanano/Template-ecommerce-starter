@@ -1,9 +1,18 @@
 import React from 'react'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
-export default function Layout() {
+const { menuContent, Company, Caroulsel } = require('../data/content')
+
+export default function Layout(props) {
     return (
-        <div>
-            
-        </div>
+        <>
+            <main>
+                <Nav menuContent={menuContent}
+                    Company={Company} />
+                {props.children}
+                <Footer/>
+            </main>
+        </>
     )
 }
