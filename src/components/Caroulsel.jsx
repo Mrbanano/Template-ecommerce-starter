@@ -13,12 +13,12 @@ export default function Caroulsel({ Caroulsel }) {
                 {
                     Caroulsel.map((item,index)=>(<Control index={index} />))
                 }
-                <div class="slide">
+                <div className="slide">
                     {
                         Caroulsel.map((item,index)=>( <Slide index={index} item={item}/>))
                     }
                 </div>
-                <div class="pagination">
+                <div className="pagination">
                     {
                         Caroulsel.map((item,index)=>( <Pagination index={index} item={item}/>))
                     }
