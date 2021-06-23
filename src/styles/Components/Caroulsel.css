@@ -1,0 +1,38 @@
+@import "./Caroulsel/Controls.css";
+@import "./Caroulsel/slider.css";
+@import "./Caroulsel/Pagination.css";
+
+
+.container-all img{
+    max-width: 100%;
+}
+
+.container-all{
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+
+
+@keyframes autoplay{
+    33%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    
+    66%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    
+    100%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+}
+
+
+
+
+
+

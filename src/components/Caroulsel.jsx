@@ -1,4 +1,7 @@
 import React from 'react'
+import Control from './items/Caroulsel/Control'
+import Slide from './items/Caroulsel/Slide'
+import Pagination from './items/Caroulsel/Pagination'
 
 export default function Caroulsel({ Caroulsel }) {
 
@@ -7,23 +10,17 @@ export default function Caroulsel({ Caroulsel }) {
     return (
         <div className="Caroulsel">
             <div className="container-all">
-                {Caroulsel.map((item, index) => (<input key={"Caroulsel-input-" + index} type="radio" id={index + 1} name="image-slide" hidden />))}
+                {
+                    Caroulsel.map((item,index)=>(<Control index={index} />))
+                }
                 <div class="slide">
                     {
-                        Caroulsel.map((item, index) => (
-                            <div key={"Caroulsel-img-" + index} className="item-slide">
-                                <img src={item.url} />
-                            </div>
-                        ))
+                        Caroulsel.map((item,index)=>( <Slide index={index} item={item}/>))
                     }
                 </div>
                 <div class="pagination">
                     {
-                        Caroulsel.map((item, index) => (
-                            <label  key={"Caroulsel-img-pagination" + index} class="pagination-item" for={index+1}>
-                                <img src={item.url}/>
-                            </label>
-                        ))
+                        Caroulsel.map((item,index)=>( <Pagination index={index} item={item}/>))
                     }
                 </div>
             </div>

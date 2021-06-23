@@ -1,0 +1,20 @@
+
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: var(--timeTransition);
+    animation-name: autoplay;
+    animation-duration: var(--animation-durarion);
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
