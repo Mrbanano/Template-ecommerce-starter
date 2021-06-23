@@ -1,7 +1,7 @@
 import React from "react"
 import Carousel from "../components/Caroulsel"
 import Nav from "../components/Nav"
-const {menuContent, Company} = require ('../data/content.js')
+const {menuContent, Company,Caroulsel} = require ('../data/content.js')
 
 export default function Home() {
   return <div>
@@ -9,6 +9,8 @@ export default function Home() {
       menuContent={menuContent}
       Company={Company}
     />
-    <Carousel/>
+    <Carousel
+      Caroulsel={Caroulsel}
+    />
     </div>
 }
