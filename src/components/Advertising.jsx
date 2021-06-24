@@ -1,13 +1,17 @@
 import React from 'react'
 
-export default function Advertising() {
+export default function Advertising({ AdvertisingItems }) {
     return (
         <section className="Advertising">
             <div className="Advertising-container">
                 <div className="Advertising-content">
-                    <div className="item"><img src="https://i.postimg.cc/L6dmpFxH/Rectangle-1.png" alt="" /></div>
-                    <div className="item"><img src="https://i.postimg.cc/L6dmpFxH/Rectangle-1.png" alt="" /></div>
-                    <div className="item"><img src="https://i.postimg.cc/L6dmpFxH/Rectangle-1.png" alt="" /></div>
+                    {
+                        AdvertisingItems.map((item, index) => (
+                            <div key={item.name} className="item">
+                                <a href={item.url}><img src={item.img} alt="" /></a>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </section>

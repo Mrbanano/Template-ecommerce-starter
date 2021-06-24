@@ -38,27 +38,27 @@ const Caroulsel = [
   }
 ]
 
-const Advertising = [
+const AdvertisingItems = [
   {
-    name:"",
-    url:"",
-    title:"",
-    subtile:"",
-    img:"",
+    name:"Promo_1",
+    url:"/productos/producto-1",
+    title:"Promocion Uno",
+    subtile:"La mejor promocion ",
+    img:"https://i.postimg.cc/L6dmpFxH/Rectangle-1.png",
   },
   {
-    name:"",
-    url:"",
-    title:"",
-    subtile:"",
-    img:"",
+    name:"Promo_2",
+    url:"/productos/producto-2",
+    title:"Promocion dos",
+    subtile:"Otra promocion",
+    img:"https://i.postimg.cc/L6dmpFxH/Rectangle-1.png",
   },
   {
-    name:"",
-    url:"",
+    name:"Promo_2",
+    url:"/productos/producto-3",
     title:"",
     subtile:"",
-    img:"",
+    img:"https://i.postimg.cc/L6dmpFxH/Rectangle-1.png",
   }
 ]
 
@@ -104,5 +104,6 @@ module.exports ={
    menuContent: menuContent,
    Company: Company,
    Caroulsel: Caroulsel,
-   socialItems:socialItems
+   socialItems:socialItems,
+   AdvertisingItems:AdvertisingItems
 }
