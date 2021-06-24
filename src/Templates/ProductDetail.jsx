@@ -9,11 +9,11 @@ export default function ProductDetail(props) {
      const image = ProductDetail.images[0]
     return (
         <div>
-            <>
+            <Layout>
             <p>{ProductDetail.name}</p>
             <p>{ProductDetail.description}</p>
             <img src={image} alt="" />
-            </>
+            </Layout>
         </div>
     )
 }

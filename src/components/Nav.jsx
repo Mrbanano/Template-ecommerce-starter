@@ -8,11 +8,13 @@ export default function Nav ({menuContent, Company}) {
   return (
     <header className="Header">
       <nav className="Header-nav">
+        <Link to="/">
         <img
           className="Header-nav-logo"
           src={Company.logo}
           alt="logo"
         />
+        </Link>
         <Search/>
         <ul>
           {menuContent.map((item, index) => (

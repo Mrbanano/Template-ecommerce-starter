@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 export default function Advertising({ AdvertisingItems }) {
     return (
@@ -8,7 +9,7 @@ export default function Advertising({ AdvertisingItems }) {
                     {
                         AdvertisingItems.map((item, index) => (
                             <div key={item.name} className="item">
-                                <a href={item.url}><img src={item.img} alt="" /></a>
+                                <Link to={item.url}><img src={item.img} alt="" /></Link>
                             </div>
                         ))
                     }

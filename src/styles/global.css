@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Oxygen:wght@300;400;700&display=swap');
+
+
 @import "./Components/Caroulsel.css";
 @import "./Components/Nav.css";
 @import "./Components/Search.css";
 @import "./Components/Footer.css";
 @import "./Components/Advertising.css";
+@import "./Components/ProductCard.css";
+@import "./Components/Button.css";
 
 
 :root{
@@ -12,7 +18,7 @@
     --Complemento:#;
 
     /*color Navbar */
-    --NavBar-Background-color: white ;
+    --NavBar-Background-color: rgb(228, 228, 228);
     --NavBar-Link-color: rgb(66, 66, 66);
     --NavBar-Link-color-hover: rgb(107, 107, 107);
     
@@ -24,10 +30,40 @@
     /*Slider Settings */
     --timeTransition:all 600ms;
     --animation-durarion: 6.5s;
+    
+    /*Card colors */
 
+    --Card-Background:#dadada;
+
+    /*Button colors */
+    --Button-Background:#f1f1f1;
+    --Button-Background-hover:black;
+    --Button-color:black;
+
+
+    /*font size variable*/
+    --fontBase: "Inter", sans-serif;
+    --fontAlternative:'Oxygen', sans-serif;
+    --headLine1: bold 72px/98px var(--fontBase);
+    --headLine2: bold 48px/64px var(--fontBase);
+    --headLine3: bold 40px/54px var(--fontBase);
+    --headLine4: bold 28px/40px var(--fontBase);
+    --headLine5: bold 24px/34px var(--fontBase);
+    --mencion: lighter 24px/39px var(--fontAlternative);
+    --testimony: bold 16px/26px var(--fontAlternative);
+    --mencion3:bold 34px/55px var(--fontAlternative);
+    --mencion2: 34px/55px var(--fontAlternative);
+    --buttom: bold 14px/23px var(--fontBase);
+    --label: bold 18px/28px var(--fontBase);
+    --caption: 12px/19px var(--fontBase);
+    --lead: 18px/32px var(--fontBase);
+    --body1: 16px/25px var(--fontBase);
+    --body2: 14px/22px var(--fontBase);
 }
 
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
+    font: var(--fontBase);
 }
