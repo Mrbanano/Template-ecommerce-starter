@@ -11,7 +11,7 @@ export default function index(props) {
     const productsData = props.data.allStripeProduct.nodes
     return (
         <Layout>
-         <h2>aqui va el carrusel</h2>
+        <Carousel Caroulsel={Caroulsel}/>
         <Advertising/>
         <Banner/>
         <Products productsData={productsData}/>

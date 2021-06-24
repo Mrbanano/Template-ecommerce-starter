@@ -11,16 +11,16 @@ export default function Caroulsel({ Caroulsel }) {
         <div className="Caroulsel">
             <div className="container-all">
                 {
-                    Caroulsel.map((item,index)=>(<Control index={index} />))
+                    Caroulsel.map((item,index)=>(<Control key={"control-"+index} index={index} />))
                 }
                 <div className="slide">
                     {
-                        Caroulsel.map((item,index)=>( <Slide index={index} item={item}/>))
+                        Caroulsel.map((item,index)=>( <Slide key={"slide-"+index} index={index} item={item}/>))
                     }
                 </div>
                 <div className="pagination">
                     {
-                        Caroulsel.map((item,index)=>( <Pagination index={index} item={item}/>))
+                        Caroulsel.map((item,index)=>( <Pagination  key={"pagination"+index} index={index} item={item}/>))
                     }
                 </div>
             </div>

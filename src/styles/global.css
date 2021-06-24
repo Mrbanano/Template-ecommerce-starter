@@ -1,6 +1,7 @@
 @import "./Components/Caroulsel.css";
 @import "./Components/Nav.css";
 @import "./Components/Search.css";
+@import "./Components/Footer.css";
 
 
 :root{
@@ -23,4 +24,9 @@
     --timeTransition:all 600ms;
     --animation-durarion: 6.5s;
 
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }

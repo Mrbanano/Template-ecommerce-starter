@@ -70,9 +70,39 @@ const Banner = [
   }
 ]
 
+const socialItems = [
+  {
+      name: "Youtube",
+      icon: "https://i.postimg.cc/pTbVqs86/youtube-1.png",
+      url: "",
+  },
+  {
+      name: "Twitter",
+      icon: "https://i.postimg.cc/tJ9qH7Bd/gorjeo.png",
+      url: "",
+  },
+  {
+      name: "Linkedin",
+      icon: "https://i.postimg.cc/hPySHDTx/linkedin.png",
+      url: "",
+  },
+  {
+      name: "Instagram",
+      icon: "https://i.postimg.cc/Wb3VmBC4/instagram.png",
+      url: "",
+  },
+  {
+      name: "Facebook",
+      icon: "https://i.postimg.cc/j54TvtRD/facebook.png",
+      url: "",
+  },
+]
+
+
 
 module.exports ={
    menuContent: menuContent,
    Company: Company,
-   Caroulsel: Caroulsel
+   Caroulsel: Caroulsel,
+   socialItems:socialItems
 }
