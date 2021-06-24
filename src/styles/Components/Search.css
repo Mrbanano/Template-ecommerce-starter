@@ -1,0 +1,25 @@
+.Search-content{
+
+}
+.Search-bar{
+    display: flex;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.Search-bar input{
+    width: 90%;
+    height: 44px;
+}
+.Search-bar .loupe{
+    width: 10%;
+    height: 44px;
+}
+.Search-bar .loupe img{
+    margin-block-start: 5px;
+    margin-inline-end: 5px;
+}

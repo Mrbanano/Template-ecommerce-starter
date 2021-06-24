@@ -13,6 +13,7 @@ export default function Nav ({menuContent, Company}) {
           src={Company.logo}
           alt="logo"
         />
+        <Search/>
         <ul>
           {menuContent.map((item, index) => (
             <li key={index}>
@@ -21,7 +22,7 @@ export default function Nav ({menuContent, Company}) {
           ))}
         </ul>
       </nav>
-      <Search/>
+      
     </header>
   )
 }
