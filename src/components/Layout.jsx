@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 const { menuContent, Company,socialItems} = require('../data/content')
 
-export default function Layout(props) {
+export default  function Layout(props) {
     return (
         <>
             <main>
@@ -16,3 +16,5 @@ export default function Layout(props) {
         </>
     )
 }
+
+
