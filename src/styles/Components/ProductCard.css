@@ -1,0 +1,58 @@
+.Products{
+    margin-block-start: 50px;
+    margin-block-end: 50px;
+    
+}
+
+
+.Products-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    grid-gap: 10px;
+}
+
+
+.Card{
+
+}
+
+.Card-container{
+    height: 100%;
+}
+
+.Card-footer{
+
+}
+
+.Card-content{
+    background-color: var(--Card-Background);
+    height: 98%;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Card-image{
+
+    text-align: center;
+}
+.Card-image img{
+   
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    width: 140px;
+    height: 140px;
+}
+
+.Card-description{
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    font: var(--body2);
+}
+
+.Card-description h4{
+    font:var(--testimony);
+}
