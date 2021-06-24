@@ -5,9 +5,7 @@ import { graphql } from 'gatsby'
 export default function Products(props) {
     console.log(props.data)
     return (
-        <Layout>
-
-        </Layout>
+        <h1>hola</h1>
     )
 }
 
@@ -17,6 +15,7 @@ export const pageQuery = graphql`
       nodes {
         id
         name
+        
       }
     }
   }
