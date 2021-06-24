@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
-const { menuContent, Company,socialItems} = require('../data/content')
+const { menuContent, Company,socialItems,FooterItems} = require('../data/content')
 
 export default  function Layout(props) {
     return (
@@ -11,10 +11,10 @@ export default  function Layout(props) {
                 <Nav menuContent={menuContent}
                     Company={Company} />
                 {props.children}
-                <Footer socialItems={socialItems}/>
+                <Footer socialItems={socialItems} FooterItems={FooterItems} Company={Company}/>
             </main>
         </>
     )
-}
+} 
 
 

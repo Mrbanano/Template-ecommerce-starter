@@ -1,14 +1,19 @@
 import React from "react"
+import Banner from "./Banner"
+import FooterIcons from "./items/FooterIcons"
 
-export default function Footer({socialItems}) {
+
+export default function Footer({socialItems,FooterItems,Company}) {
     
     return (
         <footer className="Footer">
+            <Banner></Banner>
             <div className="Footer-container">
                 <div className="Footer-content">
                     <div className="Footer-body">
+                        <FooterIcons FooterItems={FooterItems}/>
                         <div className="Footer-body-logo">
-                            <img src="https://i.postimg.cc/B6kYhnfP/logo.png" alt="logo" />
+                            <img src={Company.logo}alt="logo" />
                         </div>
                         <div className="Footer-body-nav"></div>
                     </div>
@@ -35,7 +40,7 @@ export default function Footer({socialItems}) {
                                     ❤️
                                 </span>{" "}
                                 en <span>
-                                    <a href="https://servivo.digital/">Servivo Digital</a>
+                                    <a href={Company.url}>{Company.name}</a>
                                     </span>
                                     
                             </p>
