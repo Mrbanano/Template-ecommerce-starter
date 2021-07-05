@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-out;
+    margin-block-end: 20px;
 }
 
 .content-footer-button a{
@@ -18,4 +19,11 @@
 .content-footer-button:hover{
     background-color: var(--Button-Background-hover);
     color: white
+}
+
+
+ .secundary{
+    background-color: transparent;
+    border: 2px solid black;
+    
 }

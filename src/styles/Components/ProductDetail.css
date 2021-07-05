@@ -1,0 +1,20 @@
+.ProductDetail-image{
+    text-align: center;
+}
+
+.ProductDetail-text{
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+}
+
+.ProductDetail-text .ProductDetail-title{
+    font: var(--headLine5);
+}
+
+.ProductDetail-text .ProductDetail-subtitle{
+    font: var(--body1);
+}
+
+.ProductDetailFooter{
+    text-align: center;
+}
